@@ -1,0 +1,35 @@
+PROCEDURE insertion_sort(arr : ARRAY_OF INTEGER [50];)
+VAR
+    i,j,index : INTEGER
+BEGIN
+    FOR i FROM 2 TO arr.length-1 STEP 1  DO
+        index=arr[i];
+        j=i;
+        WHILE ((j>1 AND (arr[j-1]>index)) DO
+            arr[j]=arr[j-1];
+            j=j-1;
+        END_WHILE
+        arr[j] = index;
+    END_FOR
+END
+
+ALGORITHM sorting and searching
+
+
+VAR
+    arr :array of INTEGER ;
+    n :INTEGER;
+BEGIN
+    write("Enter the length of the table");
+    read(n);
+UNTIL (n>0)
+
+FOR i FROM 0 TO n STEP 1  DO
+    REPEAT
+        write ("Enter a value");
+        read (arr[i]);
+    UNTIL (arr[i]=Isinteger())
+    
+END_FOR
+sort(arr[i]);
+END
